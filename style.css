@@ -4,8 +4,29 @@
     box-sizing: border-box;
 }
 
-body{
-    min-height: 300vh;
+.test:hover {
+    position: relative;
+    bottom: 50px;
+    right: 50px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: red;
+    transition-property: top, left, right, bottom;
+    transition-duration: 1s;
+}
+
+.test {
+    padding: 20px 50px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+}
+
+*::selection {
+    background: yellow;
+    color: red;
+}
+*::-moz-selection {
+    background: yellow;
 }
 .container {
     width: 100%;
@@ -94,8 +115,10 @@ body{
     cursor: pointer;
     width: 250px;
     padding: 20px  35px;
+    position: relative;
     margin-right: 40px;
     border-color: red;
+    bottom: 25px;
 }
 
 .button2 {
@@ -171,10 +194,11 @@ b {
     background-color: red;
     border-style: solid;
     border-width: 0;
-    width: 10%;
-    padding: 5px;
+    width: 19%;
+    padding: 5px 15px;
     text-align: center;
     margin-bottom: 2%;
+    font-weight: bold;
     margin-top: 5%;
 }
 
@@ -224,13 +248,18 @@ b {
     text-align: center;
     color: #999999;
     margin-top: 5%;
-    padding: 20px 50px;
     width: 350px;
-    background-color: rgb(255, 255, 255);
     box-shadow: rgb(44 45 46 / 6%) 0 0 50px 7px;
-    transition-property: border-color, transform;
-    transition-duration: 200ms, 200ms;
-    transition-timing-function: ease, linear;
+    position: relative;
+    transition-property: top, left , right, bottom;
+    transition-duration: 1s;
+    background: repeating-linear-gradient(
+            45deg,
+            #e78080,
+            #ad5454 10px,
+            #f32222 10px,
+            #e7092a 20px
+    );
 }
 
 .block5 .image2 {
@@ -241,12 +270,12 @@ b {
 .h-100 {
     height: 100vh;
 }
-.block5:hover {
-    border-color: red;
-    transition: 0.8s;
-    border-width: 7px;
-    border-style: solid;
-}
+/*h-100.block5:hover {*/
+/*    border-color: red;*/
+/*    transition: 0.8s;*/
+/*    border-width: 7px;*/
+/*    border-style: solid;*/
+/*}*/
 
 .span {
     color: red;
@@ -257,3 +286,526 @@ b {
     margin-top: 5%;
     text-align: center;
 }
+
+.image3 {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    bottom: 40px;
+    left: 80px;
+}
+
+.familyblockkk {
+    display: flex;
+    width: 90%;
+    margin-top: 100px;
+}
+
+.familyimg{
+    width: 100%;
+    cursor: pointer;
+}
+.familyblockk {
+    background-color: black;
+    padding: 100px;
+}
+.text1 {
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.text2 {
+    color: white;
+    width: 560px;
+    font-weight: 500;
+    font-size: 18px;
+    margin-top: 2%;
+}
+
+.flick {
+    color: white;
+    padding-top: 50px;
+    cursor: pointer;
+}
+
+.flick:hover {
+    color: red;
+    transition: 1s;
+
+}
+
+.image4 {
+    position: relative;
+    right: 190px;
+    bottom: 100px;
+}
+
+.familyimage {
+    text-align: end;
+
+}
+
+.familyblockkkk {
+    width: 35vw;
+    padding: 0;
+    text-align: center;
+    box-shadow: rgb(0 0 0 / 4%) 0 0 50px 14px;
+
+}
+
+.text4 {
+    color: black;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.input2 {
+    width: 40%;
+    height: 60px;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-style: none;
+    border-width: 1px;
+    margin-top: 20px;
+    margin-right: 10px;
+    border-color: black;
+    background-color: rgb(243, 245, 246);
+}
+
+.input3 {
+    width: 85%;
+    height: 200px;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-style: none;
+    border-width: 1px;
+    margin-top: 20px;
+    margin-right: 10px;
+    border-color: black;
+    background-color: rgb(243, 245, 246);
+}
+
+.button4 {
+    color: white;
+    background-color: red;
+    cursor: pointer;
+    width: 88%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 20px  40px;
+    border-color: red;
+}
+
+.familyblockkkkk {
+    margin-left: 5%;
+    height: 50%;
+    border-style: solid;
+    width: 35%;
+    border-width: 1px;
+    padding: 0;
+    text-align: center;
+    box-shadow: rgb(0 0 0 / 4%) 0 0 50px;
+    border-color: #999999;
+}
+
+.block6 {
+    box-shadow: rgb(0 0 0 / 4%) 7px 7px 2px;
+    margin-top: 60px;
+    padding: 20px 30px;
+    width: 50%;
+}
+
+.flex {
+    display: flex;
+}
+.text5 {
+    color: black;
+    font-weight: bold;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.text5:hover {
+    color: plum;
+    font-weight: bold;
+    transition: 1s;
+    font-size: 25px;
+}
+
+.texts2 {
+    color: #999999;
+    margin-top: 40px;
+    width: 90%;
+}
+
+.text6 {
+    font-size: 15px;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+.text7 {
+    font-size: 47px;
+    font-weight: bold;
+}
+
+.allblocks {
+    width: 35vw;
+}
+
+.family2blocks {
+    justify-content: space-between;
+    margin: 0 10vw;
+    display: flex;
+}
+
+.text8 {
+    color: #7f7f7f;
+    width: 80%;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.smalltext {
+    color: black;
+    font-weight: bold;
+    font-size: 27px;
+    margin-top: 25px;
+}
+
+.icon {
+    color: white;
+    background-color: red;
+    border-radius: 100000px;
+    display: flex;
+    width: 30px;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.bPSOegiute {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.text9 {
+    margin-left: 10px;
+    color: #7f7f7f;
+}
+
+
+.icon2 {
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+.text10 {
+    color: black;
+    margin-left: 10px;
+}
+
+.container2 {
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.icon2 {
+    color: black;
+    cursor: pointer;
+}
+
+.icon2:hover {
+    color: red;
+    transition: 1s;
+}
+
+.text10 {
+    color: black;
+    cursor: pointer;
+}
+
+.text10:hover {
+    color: red;
+    transition: 1s;
+
+}
+
+.image6 {
+    width: 100%;
+}
+
+.minitext {
+    padding: 10px;
+    position: relative;
+    top: 0;
+    background-color: white;
+}
+
+.miniblocks1 {
+    width: 100%;
+    text-align: center;
+}
+
+.image7 {
+    width: 100%;
+}
+
+.image8 {
+    width: 75%;
+}
+.block7 {
+    height: 100%;
+    box-shadow: rgb(0 0 0 / 4%) 7px 7px 2px;
+    margin-top: 60px;
+    padding: 20px 30px;
+}
+.block8 {
+    height: auto;
+    overflow: hidden;
+    padding-bottom: 10px;
+    width: 350px;
+    box-shadow: rgb(0 0 0 / 4%) 7px 7px 2px;
+}
+
+
+.avatar {
+    margin-right: 8%;
+}
+
+
+/*-------------------------------------------------------------------------------------------------*/
+
+.familyimage2 {
+    height: 200px;
+    overflow: hidden;
+}
+.wrapper-text{
+    height: 120px;
+}
+
+.familyimage3 {
+    margin-bottom: 90px;
+    width: 60%;
+    margin-left: 20%;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+
+.familyimg2 {
+    width: 30%;
+}
+.familyimg3 {
+    width: 30%;
+}
+
+.number1 {
+    font-size: 35px;
+    font-weight: 900;
+}
+
+.texts3 {
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.alottextss {
+    color: #7f7f7f;
+    margin-top: 40px;
+}
+
+.ffff {
+    box-shadow: rgb(0 0 0 / 4%) 7px 7px 2px;
+    text-align: center;
+    width: 100%;
+    padding: 25px 60px;
+}
+
+.tex1 {
+    font-weight: 900;
+    color: black;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.tex2 {
+    color: rgb(51, 69, 102);
+    font-size: 40px;
+    margin-top: 30px;
+    font-weight: bold;
+}
+.tex3 {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #7f7f7f;
+    margin-bottom: 25px;
+}
+
+.tex4 {
+    margin-bottom: 20px;
+}
+.tex5 {
+    margin-bottom: 20px;
+}
+.tex6 {
+    margin-bottom: 20px;
+}
+.tex7 {
+    margin-bottom: 20px;
+    width: 13vw;
+}
+
+.jdd {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.textsss {
+    color: #999999;
+    width: 100%;
+    font-size: 20px;
+    font-weight: bold;
+}
+.fffff {
+    box-shadow: rgb(0 0 0 / 4%) 7px 7px 2px;
+    text-align: center;
+    width: 22%;
+    position: relative;
+    bottom: 40px;
+    padding: 25px 60px;
+}
+.familyburger{
+    display: none;
+}
+
+
+@media only screen and (max-width: 1277px) {
+    .familyitems {
+        display: none;
+    }
+    .ddd {
+        margin-left: auto;
+    }
+    .button {
+        display: none;
+    }
+    .burger {
+        color: white;
+        font-size: 30px;
+        display: block;
+        cursor: pointer;
+    }
+    .bigTextS {
+        width: 100%;
+        font-weight: bold;
+        margin: 0 auto ;
+    }
+    .block2 {
+        margin-top: 7%;
+    }
+    .textsss {
+        color: #999999;
+        width: 100%;
+        font-size: 30px;
+        font-weight: bold;
+    }
+    .miniblock {
+        flex-direction: column;
+    }
+    .bigTextss {
+        color: black;
+        font-weight: bold;
+    }
+    .alottexts {
+        flex-direction: column;
+    }
+    .familyburger {
+        display: block;
+    }
+    .span2 {
+        padding-top: 30px;
+    }
+    .alottextss {
+        color: #7f7f7f;
+        font-weight: bold;
+    }
+    .familyblockkk {
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
+    .familyimg {
+        width: 80vw;
+    }
+    .image4 {
+        display: none;
+    }
+    .familyblockk {
+        width: 80vw;
+        margin-left: 80px;
+        padding: 100px 40px;
+    }
+    .image3 {
+        bottom: 0;
+        top: 5px;
+    }
+    .family2blocks {
+        flex-direction: column;
+    }
+    .familyblockkkk {
+        width: 100%;
+    }
+    .allblocks {
+        width: 100%;
+        margin-top: 50px;
+    }
+    .block9 {
+        display: none;
+    }
+    .familyblocks {
+        margin-top: 50px;
+        width: 100%;
+    }
+    .ddffff {
+        display: flex;
+        justify-content: space-around;
+    }
+    .family{
+        margin-left: 38%;
+    }
+    .familyimage3 {
+        flex-direction: column;
+    }
+    .aaaa {
+        display: flex;
+        justify-content: space-around;
+    }
+    .jdd {
+        flex-direction: column;
+    }
+    .ffff {
+        width: 40%;
+    }
+    .vvv {
+        margin-left: 29%;
+    }
+    .tex7 {
+        width: 30vw;
+    }
+
+
+}
+
+
+
+
+
+
+
