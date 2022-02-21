@@ -42,6 +42,7 @@
     align-items: center;
     box-shadow: rgb(0 0 0 / 4%) 7px 7px 2px;
     padding: 2vh;
+    width: 100vw;
 }
 
 .header div {
@@ -55,7 +56,7 @@
 }
 .image {
     cursor: pointer;
-    width: 150px;
+    width: 100px;
 }
 
 .item {
@@ -79,7 +80,7 @@
     position: absolute;
     z-index: 1 ;
     top: 0;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
 }
 
@@ -93,6 +94,7 @@
     text-align: center;
     top: 150px;
     color: white;
+    width: 100vw;
     font-size: 90px;
 }
 
@@ -291,18 +293,15 @@ b {
     width: 100%;
     height: 100%;
     position: relative;
-    bottom: 40px;
-    left: 80px;
 }
 
 .familyblockkk {
     display: flex;
-    width: 90%;
+    width: 100vw;
     margin-top: 100px;
 }
 
 .familyimg{
-    width: 100%;
     cursor: pointer;
 }
 .familyblockk {
@@ -317,7 +316,6 @@ b {
 
 .text2 {
     color: white;
-    width: 560px;
     font-weight: 500;
     font-size: 18px;
     margin-top: 2%;
@@ -361,14 +359,11 @@ b {
 }
 
 .input2 {
-    width: 40%;
     height: 60px;
     padding-right: 10px;
     padding-left: 10px;
     border-style: none;
     border-width: 1px;
-    margin-top: 20px;
-    margin-right: 10px;
     border-color: black;
     background-color: rgb(243, 245, 246);
 }
@@ -455,7 +450,6 @@ b {
 
 .family2blocks {
     justify-content: space-between;
-    margin: 0 10vw;
     display: flex;
 }
 
@@ -589,6 +583,33 @@ b {
     height: 120px;
 }
 
+.familyinputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    gap: 20px;
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.familyinputs > div {
+    width: 100% ;
+}
+
+
+.input2 {
+    width: 100%;
+}
+
+.gap20pxs {
+    gap: 20px;
+    justify-content: center;
+
+}
+
 .familyimage3 {
     margin-bottom: 90px;
     width: 60%;
@@ -615,6 +636,9 @@ b {
     font-weight: bold;
     font-size: 32px;
 }
+.aaaa {
+    display: flex;
+}
 
 .alottextss {
     color: #7f7f7f;
@@ -624,8 +648,6 @@ b {
 .ffff {
     box-shadow: rgb(0 0 0 / 4%) 7px 7px 2px;
     text-align: center;
-    width: 100%;
-    padding: 25px 60px;
 }
 
 .tex1 {
@@ -704,7 +726,7 @@ b {
         cursor: pointer;
     }
     .bigTextS {
-        width: 100%;
+        width: 100vw;
         font-weight: bold;
         margin: 0 auto ;
     }
@@ -713,7 +735,7 @@ b {
     }
     .textsss {
         color: #999999;
-        width: 100%;
+        width: 100vw;
         font-size: 30px;
         font-weight: bold;
     }
@@ -737,19 +759,24 @@ b {
         color: #7f7f7f;
         font-weight: bold;
     }
+    .alottextsss {
+        color: #7f7f7f;
+        font-weight: bold;
+    }
+    .alottextsss {
+        color: #7f7f7f;
+        font-weight: bold;
+    }
     .familyblockkk {
         flex-direction: column;
         margin-bottom: 50px;
     }
     .familyimg {
-        width: 80vw;
     }
     .image4 {
         display: none;
     }
     .familyblockk {
-        width: 80vw;
-        margin-left: 80px;
         padding: 100px 40px;
     }
     .image3 {
@@ -791,18 +818,153 @@ b {
         flex-direction: column;
     }
     .ffff {
-        width: 40%;
-    }
-    .vvv {
-        margin-left: 29%;
+        flex-grow: 1;
     }
     .tex7 {
         width: 30vw;
     }
-
+    .bigTextssss {
+        color: black;
+        font-weight: bold;
 
 }
+.imagee {
+    width: 100%;
+    height: 100%;
+}
 
+}
+@media only screen and (max-width: 500px) {
+    .dddd {
+
+    }
+
+    .imagee {
+    }
+
+    .block2 {
+    }
+
+    .text {
+        width: 50vw;
+    }
+
+    .bigTextss {
+        width: 60vw;
+    }
+
+    .familyblocks {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .block5 {
+    }
+
+    .alottexts {
+    }
+
+    .familyimg {
+    }
+
+    .familyblockk {
+    }
+
+    .family2blocks {
+    }
+
+    .block11 {
+        display: none;
+    }
+
+    .block9 {
+        display: block;
+    }
+
+    .ddffff {
+        flex-direction: column;
+    }
+    .wrapper-text {
+        align-items: center;
+    }
+    .alottextsss {
+        width: 60vw;
+    }
+
+    .texts3 {
+        width: 65vw;
+    }
+    .alottextss {
+        width: 60vw;
+        margin: 0;
+    }
+
+    .number1 {
+        padding-left: 100px;
+    }
+
+    .familyblockk {
+    }
+
+    .text2 {
+    }
+
+    .family2blocks {
+        width: 100%;
+    }
+
+    .familyinputs {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+        gap: 20px;
+    }
+    .input2 {
+        width: 100%;
+    }
+
+    .gap20pxs {
+        gap: 20px;
+
+    }
+
+    .block8 {
+        width: 100%;
+    }
+
+    .bigTextssss {
+        width: 69vw;
+    }
+    .jdd {
+
+    }
+    .aaaa {
+        flex-direction: column;
+        align-items: center;
+    }
+    .ffff {
+        width: 70%;
+    }
+    .tex7 {
+        width: 50vw;
+    }
+    .gap20pxs {
+        flex-direction: column;
+    }
+    .fass {
+        flex-direction: column;
+    }
+    .bigText {
+        font-size: 64px;
+    }
+    .button1 {
+        bottom: 0;
+    }
+
+}
 
 
 
